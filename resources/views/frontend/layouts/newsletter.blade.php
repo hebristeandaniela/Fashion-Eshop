@@ -1,0 +1,25 @@
+
+<!-- Start Shop Newsletter  -->
+<section class="shop-newsletter section">
+    <div class="container">
+        <div class="inner-top">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-12">
+                    <!-- Start Newsletter Inner -->
+                    <div class="inner">
+                        <h4>Newsletter</h4>
+                        <p>Abonează-te la newsletter-ul nostru și primești <span>10%</span> reducere la prima ta achiziție!</p>
+                        <form action="{{route('subscribe')}}" method="post" class="newsletter-inner">
+                            @csrf
+                            <input name="email" placeholder="Adresa ta de email" required="" type="email">
+                            <button class="btn" type="submit">Abonează-te!</button>
+                        </form>
+
+                    </div>
+                    <!-- End Newsletter Inner -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Shop Newsletter -->
